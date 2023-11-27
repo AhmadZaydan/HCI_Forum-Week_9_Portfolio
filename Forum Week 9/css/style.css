@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar */
+#nav-bar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+}
+
+#nav-bar ul li a {
+  text-align: right;
+  margin: 3px;
+  color: #fff;
+  transition: 0.3s;
+}
+
+#nav-bar ul li a:hover {
+  background-color: rgb(133, 177, 215);
+  color: rgb(38, 38, 38);
+}
+
+.navbar-brand img {
+  height: 50px;
+  padding-left: 20px;
+}
+
+/* Banner */
+.banner {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+    url(../img/FotoZaydan.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner .content {
+  max-width: 900px;
+  text-align: center;
+  padding: 30px;
+  border-radius: 30px;
+}
+
+.banner .content h3 {
+  font-size: 60px;
+  color: #fff;
+}
+
+.banner .content h2 {
+  font-size: 5em;
+  color: #fff;
+}
+
+.banner .content p {
+  font-size: 20px;
+  color: #fff;
+}
+
+/* About */
+#about {
+  padding: 50px 0;
+  color: #555;
+  width: 100%;
+  min-height: 80vh;
+}
+
+#about .container {
+  margin-top: 140px;
+  margin-bottom: 100px;
+}
+
+#about .container .about-font {
+  font-size: 20px !important;
+}
+
+#about .imgbox {
+  align-items: center;
+  justify-content: center;
+}
+
+#about .imgbox img {
+  width: 400px;
+  margin-left: 100px !important;
+  border-radius: 10%;
+}
+
+/* Contact */
+#contact {
+  min-height: 100vh;
+  padding: 50px 0;
+  background-color: #efefef;
+}
+
+#contact .infos {
+  margin-top: 100px;
+}
+
+.info-box {
+  background-color: #fff;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.info-box .fa-solid,
+.info-box .fa-brands {
+  color: #ff9000;
+  margin: 3px;
+}
+
+/* hobbies */
+#hobbies {
+  padding: 50px 0;
+  background-image: linear-gradient(rgb(42, 74, 255), rgb(42, 74, 255)),
+    url(img/gradient.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+}
+
+#hobbies h1::after {
+  content: "";
+  display: block;
+  background-color: #fff;
+  height: 3px;
+  width: 150px;
+  margin: 10px auto;
+}
+
+#hobbies .icon {
+  font-size: 40px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  height: 85px;
+  width: 85px;
+  margin: 30px auto;
+  padding: 10px;
+}
+
+h1::after {
+  content: "";
+  display: block;
+  background-color: #0055ff;
+  height: 4px;
+  width: 150px;
+  margin: 10px auto;
+}
+
+#skills {
+  padding: 50px 0;
+  background-image: linear-gradient(rgb(42, 120, 255), rgb(42, 120, 255));
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+}
+
+#skills h1::after {
+  content: "";
+  display: block;
+  background-color: #fff;
+  height: 3px;
+  width: 150px;
+  margin: 10px auto;
+}
+
+#skills .icon {
+  font-size: 40px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  height: 85px;
+  width: 85px;
+  margin: 30px auto;
+  padding: 10px;
+}
+
+h1::after {
+  content: "";
+  display: block;
+  background-color: #0055ff;
+  height: 4px;
+  width: 150px;
+  margin: 10px auto;
+}

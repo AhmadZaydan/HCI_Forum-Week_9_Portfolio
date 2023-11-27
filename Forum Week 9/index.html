@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- style css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="lib/fontawesome-free-6.4.2-web/fontawesome-free-6.4.2-web/css/all.min.css"
+    />
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="lib/bootstrap-5.3.2-dist/bootstrap.min.css" />
+
+    <title>Potofolio_Ahmad Zaydant</title>
+    <!-- jquery js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- script js -->
+    <script>
+      $(document).ready(function () {
+        $("#contact-form").submit(function (e) {
+          // Check if any of the required fields are empty
+          if (
+            !$("#name").val() ||
+            !$("#email").val() ||
+            !$("#phoneNum").val() ||
+            !$("#message").val()
+          ) {
+            alert("Please fill in all required fields.");
+            e.preventDefault(); // Prevent the form from submitting
+          }
+          // You can add more specific validation if needed
+          else if (!isValidEmail($("#email").val())) {
+            alert("Please enter a valid email address.");
+            e.preventDefault();
+          }
+          // Add more conditions as needed
+        });
+
+        // Function to validate email format
+        function isValidEmail(email) {
+          var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+          return emailRegex.test(email);
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <section id="nav-bar">
+      <nav class="navbar navbar-expand-lg bg-primary shadow-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">My portofolio</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#banner">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About Me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#hobbies">Hobbies</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#skills">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contacts</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+    <!-- banner -->
+    <section id="banner" class="banner">
+      <div class="content">
+        <h3>Hi, My Name Is</h3>
+        <h2>AHMAD ZAYDAN</h2>
+        <p>First year computer science student</p>
+      </div>
+    </section>
+    <!-- about -->
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 about-font">
+            <h2>About Me</h2>
+            <p>
+              I was born on June 2nd 2005 in the city of Semarang, and i'm a
+              second child in a family of five. I live in Cirebon City for
+              around 15 years ever since i was a baby. I am around 170 cm tall,
+              and weigh 78 kg. I am a male Muslim, my hobby is jogging, and my
+              dream is to change the world through programming.
+            </p>
+            <p>
+              I am currently studying as a university student in Binus
+              International University. I started my Journey in the middle of
+              2023, and i hope i can graduate in 2027. I hoped that by entering
+              Binus International University, i will be able to learn all i need
+              about computer science so that i can build a promising career in
+              the future.
+            </p>
+          </div>
+          <div class="col-lg-6">
+            <div class="imgbox">
+              <img src="img/Foto Profil 2.png" alt="Picture of Zaydan" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- my hobbies -->
+    <section id="hobbies">
+      <div class="container">
+        <h1 class="text-center">Hobbies</h1>
+        <div class="row">
+          <div class="col-lg-3 text-center">
+            <div class="icon">
+              <i class="fa-solid fa-desktop"></i>
+            </div>
+            <h3>Programming</h3>
+            <p>I like to code in my spare time.</p>
+          </div>
+          <div class="col-lg-3 text-center">
+            <div class="icon">
+              <i class="fa-solid fa-gamepad"></i>
+            </div>
+            <h3>Gaming</h3>
+            <p>
+              I like to play games, especially action RPG and turn-base RPG.
+            </p>
+          </div>
+          <div class="col-lg-3 text-center">
+            <div class="icon">
+              <i class="fa-solid fa-person-running"></i>
+            </div>
+            <h3>Jogging</h3>
+            <p>I like to do a bit of jog when i'm free.</p>
+          </div>
+          <div class="col-lg-3 text-center">
+            <div class="icon">
+              <i class="fa-solid fa-book"></i>
+            </div>
+            <h3>Learning</h3>
+            <p>I like to learn things i'm interested in.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- my skills -->
+    <section id="skills">
+      <div class="container">
+        <h1 class="text-center">Programming Skills</h1>
+        <div class="row">
+          <div class="col-lg-3 text-center">
+            <div class="icon">
+              <i class="fa-solid fa-gamepad"></i>
+            </div>
+            <h3>Making games</h3>
+          </div>
+          <div class="col-lg-3 text-center">
+            <div class="icon">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <h3>Making App and Web App</h3>
+          </div>
+          <div class="col-lg-3 text-center">
+            <div class="icon">
+              <i class="fa-solid fa-calculator"></i>
+            </div>
+            <h3>Data Science</h3>
+          </div>
+          <div class="col-lg-3 text-center">
+            <div class="icon">
+              <i class="fa-solid fa-desktop"></i>
+            </div>
+            <h3>Others</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- My Contacts -->
+    <section id="contact">
+      <div class="container">
+        <h1 class="text-center">CONTACT ME</h1>
+        <div class="row">
+          <div class="col-lg-6">
+            <form id="contact-form">
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="name"
+                  class="form-control"
+                  placeholder="name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="email"
+                  class="form-control"
+                  placeholder="email"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="phoneNum"
+                  class="form-control"
+                  placeholder="phone"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <textarea
+                  cols="30"
+                  rows="10"
+                  id="message"
+                  class="form-control"
+                  style="resize: none"
+                  required
+                ></textarea>
+              </div>
+              <div class="d-grid gap-2">
+                <a href="" class="btn btn-primary" type="Submit" value="Submit"
+                  >Submit</a
+                >
+              </div>
+            </form>
+          </div>
+          <div class="col-lg-6">
+            <div class="info-box">
+              Address : <i class="fa-solid fa-location-dot"></i> Jl. Pramuka
+              Regency Blok A No. 3, Sutawinangun, Kedawung, Kabupaten Cirebon,
+              Jawa Barat
+            </div>
+            <div class="info-box">
+              Phone : <i class="fa-solid fa-phone"></i> 08119121444
+            </div>
+            <div class="info-box">
+              Email :
+              <i class="fa-solid fa-mail-bulk"></i>kyuzidan@gmail.com
+            </div>
+            <div class="info-box">
+              Get Social :
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-discord"></i>
+              <i class="fa-brands fa-linkedin"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
